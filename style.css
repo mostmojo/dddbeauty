@@ -87,6 +87,10 @@ h1 {
 /* Nav section */
 .main-head {
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	/* position: relative fixes the box-shadow issue with background image */
+	position: relative;
+	z-index: 2;
+
 }
 
 nav {
@@ -137,6 +141,7 @@ nav {
 
 .hero-images {
 	flex: 1 1 40rem;
+	background: linear-gradient(#dad8dd, #dad1d4);
 }
 
 .hero-elena {
