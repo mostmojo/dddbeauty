@@ -159,7 +159,9 @@ nav {
 	bottom: 0;
 	left: -20%;
 	z-index: -1;
-	animation: plant-entrance 1.5s ease-in-out;
+	transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards;
+	transform-origin: bottom;
 }
 
 .plant2 {
@@ -179,9 +181,9 @@ nav {
 
 @keyframes plant-entrance {
 	from {
-		transform: translateY(10%) rotateZ(-10deg);
+		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
 	}
 	to {
-		transform: translateY(0%) rotateZ(0deg);
+		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
 	}
 }
