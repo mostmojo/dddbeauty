@@ -78,6 +78,7 @@ a {
 
 body {
 	font-family: 'Ruhl', sans-serif;
+	animation: opening 1s ease-in-out;
 }
 
 h1 {
@@ -162,4 +163,15 @@ nav {
 
 .plant2 {
 	left: 40%;
+}
+
+/* Animations */
+
+@keyframes opening {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
