@@ -199,12 +199,24 @@ nav {
 	}
 }
 
+.burger,
+.menu-check {
+	display: none;
+}
+
 @media screen and (max-width: 842px) {
+
+	.burger {
+		position: relative;
+		display: block;
+	}
+
 	.burger span {
 		padding: 0.2rem 2rem;
 		background: var(--grey-text);
 		margin: 0.5rem 0rem;
 		display: block;
+		transition: all 0.5s ease;
 	}
 
 	.nav-links a {
@@ -222,5 +234,43 @@ nav {
 		left: 100%;
 		flex-direction: column;
 		align-items: center;
+		transition: transform 1s ease;
 	}
+
+	.menu-check {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 5%;
+		transform: translate(5%, -50%);
+		width: 5rem;
+		height: 5rem;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 100;
+	}
+
+	/* When menu-check, which is an `input type checkbox`, is checked, then alter the nav-links class plox */
+	.menu-check:checked + .nav-links {
+		transform: translateX(-100%);
+	}
+
+	/* When menu-check, which is an `input type checkbox`, is checked, then alter the burger span class to make the menu white */
+	.menu-check:checked ~ .burger span {
+		background-color: white;
+	}
+
+	/* When menu-check, which is an `input type checkbox`, is checked, then alter the burger span class to tilt and form an `X` */
+	.menu-check:checked ~ .burger span:nth-child(1) {
+		transform: rotateZ(45deg) translateY(300%);
+	}
+
+	.menu-check:checked ~ .burger span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.menu-check:checked ~ .burger span:nth-child(3) {
+		transform: rotateZ(-45deg) translateY(-300%);
+	}
+
 }
