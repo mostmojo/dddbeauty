@@ -89,8 +89,3 @@ body {
 h1 {
 	font-family: 'Vibes', sans-serif;
 }
-
-.burger,
-.menu-check {
-	display: none;
-}

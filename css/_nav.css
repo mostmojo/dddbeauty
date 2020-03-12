@@ -23,3 +23,8 @@ nav {
 	justify-content: space-around;
 	flex: 1 1 20rem;
 }
+
+.burger,
+.menu-check {
+	display: none;
+}
