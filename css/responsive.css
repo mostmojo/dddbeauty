@@ -80,4 +80,18 @@
 	.about-text div {
 		padding: 3rem 3rem;
 	}
+
+	/* Gallery */
+	.gallery img {
+		grid-row: auto;
+		grid-column: auto;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	}
+
+	.gallery-head {
+		display: none;
+	}
 }
