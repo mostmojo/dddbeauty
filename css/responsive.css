@@ -12,6 +12,7 @@
 	.burger {
 		position: relative;
 		display: block;
+		cursor: pointer;
 	}
 
 	.burger span {
