@@ -1,0 +1,70 @@
+/* Contact  and footer */
+
+.contact {
+	min-height: 90vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-wrapper {
+	flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+	margin: 5rem 0;
+}
+
+.form-wrapper span {
+	font-size: var(--big-text);
+	color: var(--special-color);
+}
+
+.form-wrapper label {
+	display: block; /*takes up all available space */
+}
+
+.form-wrapper input {
+	display: block;
+	margin: 3rem 0rem;
+	background: var(--background-color);
+	color: #fff;
+	border: none;
+	padding: 1rem;
+	border-radius: 0.2rem;
+}
+
+.form-wrapper button {
+	padding: 1rem 8rem;
+	background: var(--special-color);
+	color: #fff;
+	border: none;
+	border-radius: 0.2rem;
+	width: 100%;
+}
+
+.contact img {
+	flex: 1 1 40rem;
+}
+
+/* Footer */
+
+footer {
+	background: var(--background-color);
+	color: white;
+	display: flex;
+	padding: 3rem 5%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer ul {
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer h4 {
+	flex: 3 1 40rem;
+	font-size: calc(1.4rem + 1vw);
+}

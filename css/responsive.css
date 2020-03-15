@@ -40,7 +40,7 @@
 		transition: transform 1s ease;
 	}
 
-	.menu-check {
+	/* .menu-check {
 		display: block;
 		position: absolute;
 		top: 50%;
@@ -51,29 +51,24 @@
 		cursor: pointer;
 		opacity: 0;
 		z-index: 100;
-	}
+	} */
 
-	/* When menu-check, which is an `input type checkbox`, is checked, then alter the nav-links class plox */
-	.menu-check:checked + .nav-links {
+	/*  On click of burger div --> bring in the nav */
+	.nav-open {
 		transform: translateX(-100%);
 	}
 
-	/* When menu-check, which is an `input type checkbox`, is checked, then alter the burger span class to make the menu white */
-	.menu-check:checked ~ .burger span {
-		background-color: white;
-	}
-
-	/* When menu-check, which is an `input type checkbox`, is checked, then alter the burger span class to tilt and form an `X` */
-	.menu-check:checked ~ .burger span:nth-child(1) {
+	.toggle .line1 {
 		transform: rotateZ(45deg) translateY(300%);
+		background: #fff;
 	}
-
-	.menu-check:checked ~ .burger span:nth-child(2) {
+	.toggle .line2 {
 		opacity: 0;
 	}
 
-	.menu-check:checked ~ .burger span:nth-child(3) {
+	.toggle .line3 {
 		transform: rotateZ(-45deg) translateY(-300%);
+		background: #fff;
 	}
 
 	/* About section */
@@ -94,4 +89,27 @@
 	.gallery-head {
 		display: none;
 	}
+
+	.contact img {
+		display: none;
+	}
+
+	footer ul {
+		order: 1;
+	}
+
+	footer h4 {
+		order: 2;
+		text-align: center;
+		padding: 1rem;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	--header1: 3rem;
+	--header2: 5rem;
+	--header3: 4rem;
+	--header4: 3rem;
+	--text: 3rem;
+	--big-text: 8rem;
 }
