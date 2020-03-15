@@ -25,12 +25,23 @@
 
 .form-wrapper input {
 	display: block;
-	margin: 3rem 0rem;
+	margin: 2rem 0rem;
 	background: var(--background-color);
 	color: #fff;
 	border: none;
 	padding: 1rem;
 	border-radius: 0.2rem;
+}
+
+.form-wrapper textarea {
+	display: block;
+	margin: 2rem 0rem;
+	background: var(--background-color);
+	color: #fff;
+	border: none;
+	padding: 5rem 1rem;
+	border-radius: 0.2rem;
+	font-size: var(--text);
 }
 
 .form-wrapper button {
