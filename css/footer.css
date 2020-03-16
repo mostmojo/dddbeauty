@@ -39,7 +39,7 @@
 	background: var(--background-color);
 	color: #fff;
 	border: none;
-	padding: 5rem 1rem;
+	padding: 5rem 2rem;
 	border-radius: 0.2rem;
 	font-size: var(--text);
 }
