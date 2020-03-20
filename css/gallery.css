@@ -22,7 +22,7 @@
 	grid-row: 1/2;
 }
 
-.gallery-head {
+/* .gallery-head {
 	/* Center the content in the middle of the parent .gallery div */
 	position: absolute;
 	top: 50%;
@@ -32,4 +32,4 @@
 	background: var(--background-color);
 	padding: 5rem 10rem;
 	text-align: center;
-}
+} */

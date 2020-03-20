@@ -81,3 +81,7 @@ footer h4 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 }
+
+.social-img {
+	width: var(--header1);
+}
