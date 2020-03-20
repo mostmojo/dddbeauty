@@ -17,7 +17,8 @@
 
 .about-text h3 {
 	padding: 2rem 0;
-	font-family: 'Ruhl Medium';
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
 
 .about-text h2 {
