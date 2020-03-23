@@ -77,8 +77,20 @@
 			padding: 1.2rem 3rem;
 	}
 
+	.about-text {
+		padding-bottom: 1.5rem;
+	}
+
 	.about-text h3 {
 		padding: 1rem 0;
+	}
+
+	.form-wrapper textarea {
+		padding: 5rem 3rem;
+	}
+
+	.form-wrapper input {
+		padding: 1rem 4rem;
 	}
 
 	/* Gallery */
