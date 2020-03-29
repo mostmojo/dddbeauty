@@ -109,9 +109,7 @@
 		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	}
 
-	.gallery-head {
-		display: none;
-	}
+
 
 	.contact {
 		margin-bottom: 2rem;
@@ -142,4 +140,39 @@
 	--header4: 3rem;
 	--text: 3rem;
 	--big-text: 8rem;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
