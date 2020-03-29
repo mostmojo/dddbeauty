@@ -1,42 +1,42 @@
-.about {
+.product {
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.about-text {
+.product-text {
 	background: var(--background-color);
 	color: #fff;
 	flex: 2 1 40rem;
 	justify-content: space-around;
 }
 
-.about-text div {
+.product-text div {
 	padding: 3rem 8rem;
 }
 
-.about-text h3 {
+.product-text h3 {
 	padding: 2rem 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
 	font-weight: 300;
 }
 
-.about-text h2 {
+.product-text h2 {
 	font-family: 'Vibes';
 	padding: 4rem;
 }
-.about-image {
+.product-image {
 	/* flex grow, flex shrink, flex-basis */
 	flex: 1 1 40rem;
 	position: relative;
 }
 
-.about-link {
+.product-link {
 	color: var(--special-color);
 	font-weight: 700;
 }
 
-.about-image h5 {
+.product-image h5 {
 	position: absolute;
 	letter-spacing: 2rem;
 	top: 20%;
@@ -44,11 +44,24 @@
 	transform: translate(-50%, -20%);
 }
 
-.about-image img {
+.product-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
+.product-products {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.product-products img {
+	height: 16rem;
+}
+
 /*
 Flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
 The flex CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for flex-grow, flex-shrink, and flex-basis.

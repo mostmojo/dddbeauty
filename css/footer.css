@@ -15,7 +15,7 @@
 }
 
 .form-wrapper span {
-	font-size: var(--big-text);
+	font-size: var(--header2);
 	color: var(--special-color);
 }
 

@@ -72,16 +72,16 @@
 		background: #fff;
 	}
 
-	/* About section */
-		.about-text div {
-			padding: 1.2rem 3rem;
+	/* product section */
+		.product-text div {
+			/* padding: 1.2rem 3rem; */
 	}
 
-	.about-text {
+	.product-text {
 		padding-bottom: 1.5rem;
 	}
 
-	.about-text h3 {
+	.product-text h3 {
 		padding: 1rem 0;
 	}
 
