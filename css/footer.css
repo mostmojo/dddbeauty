@@ -1,7 +1,7 @@
 /* Contact  and footer */
 
 .contact {
-	min-height: 90vh;
+	min-height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
