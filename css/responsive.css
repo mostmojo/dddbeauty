@@ -74,7 +74,7 @@
 
 	/* product section */
 		.product-text div {
-			/* padding: 1.2rem 3rem; */
+			padding: 1.2rem 3rem;
 	}
 
 	.product-text {
@@ -86,7 +86,7 @@
 	}
 
 	.form-wrapper textarea {
-		padding: 5rem 3rem;
+		padding: 5rem 4rem;
 	}
 
 	.form-wrapper input {
