@@ -20,6 +20,9 @@
 
 .hero-introduction h2 {
 	padding-top: 3rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #946182;
 }
 
 .hero-introduction a {
