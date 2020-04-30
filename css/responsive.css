@@ -109,8 +109,6 @@
 		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 	}
 
-
-
 	.contact {
 		margin-bottom: 2rem;
 	}
@@ -127,6 +125,11 @@
 		order: 2;
 		text-align: center;
 		padding: 1rem;
+	}
+
+	footer p,
+	footer a {
+		order: 3;
 	}
 
 	.form-wrapper h2 {
