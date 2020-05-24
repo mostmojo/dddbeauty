@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDD Beauty &mdash; Professional Treatments and Skin Products | Nicosia, Cyprus</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <meta name="description" content="Professional beauty therapist available for treatments and products." />
     <meta name="robots" content="index, follow" />
 
@@ -27,264 +29,483 @@
       name="twitter:image:src"
       content="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>DDD Beauty | Professional Treatments & Skin Products</title>
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="main-head">
-      <nav>
-        <div id="logo">
-          <a href="#">
-            <img src="img/logo_ddd.png" id="logo" style="height: 50px;" />
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#productSection">Products</a></li>
-          <li><a href="#treatmentsSection">Treatments</a></li>
-          <li><a href="#contactSection">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <span class="line1"></span>
-          <span class="line2"></span>
-          <span class="line3"></span>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-introduction flex">
-          <h2>
-            <span style="letter-spacing: -80px; opacity: 0.25;">D</span>
-            <span style="letter-spacing: -70px; opacity: 50%;">D</span>
-            <span style="letter-spacing: 0px;">D</span>
-            Beauty
-          </h2>
-          <p>
-            Our mission is to create skin that is healthy, youthful and vibrant.
-          </p>
-          <a href="#productSection">Products</a>
-        </div>
-        <div class="hero-images">
-          <img class="hero-elena" src="./img/elena-joy.png" alt="picture-of-elena-joy" />
-          <img src="./img/plant1.png" alt="" class="plant1 plant" />
-          <img src="./img/plant2.png" alt="" class="plant2 plant" />
-        </div>
-      </section>
-      <section id="productSection" class="product">
-        <div class="product-text flex-no-align">
-          <div class="product-life">
-            <h3>Products</h3>
-            <p>
-              The products we use for professional and home use are developed by Dr. Zein Obagi, MD - ZO &reg; Skin
-              Health. We also use the preslifting fibroblast reproduction treatment solution developed by Swiss Group
-              AG.
-            </p>
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
           </div>
-          <div class="product-products">
-            <div class="product-item">
-              <img src="./img/zo_1.png" alt="item-1" />
-              <p class="product-description">Daily Defense</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_2.png" alt="item-2" />
-              <p class="product-description">Firming Serum</p>
-            </div>
-            <!-- <div class="product-item">
-							<img src="./img/zo_3.png" alt="item-3" />
-							<p class="product-description">Growth Factor</p>
-						</div> -->
-            <div class="product-item">
-              <img src="./img/zo_4.png" alt="item-4" />
-              <p class="product-description">Wrinkle Texture</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_5.png" alt="item-5" />
-              <p class="product-description">Radical Night</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_6.png" alt="item-6" />
-              <p class="product-description">Vitamin C</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_7.png" alt="item-7" />
-              <p class="product-description">Exfoliate Accelerator</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_8.png" alt="item-8" />
-              <p class="product-description">Pore Refiner</p>
-            </div>
-            <div class="product-item">
-              <img src="./img/zo_9.png" alt="item-9" />
-              <p class="product-description">Enzymatic Peel</p>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <!-- .site-mobile-menu -->
+
+      <div class="site-navbar-wrap js-site-navbar bg-white">
+        <div class="container">
+          <div class="site-navbar bg-light">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo">
+                  <a href="index.html" class="font-weight-bold">DDD Beauty</a>
+                </h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                      <a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                        <span class="icon-menu h3"></span>
+                      </a>
+                    </div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="#treatments">Treatments</a></li>
+                      <li><a href="#products">Products</a></li>
+                      <li><a href="#contactUs">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
           </div>
-          <div class="product-life">
-            <h3>Programs</h3>
+        </div>
+      </div>
+
+      <div class="slide-one-item home-slider owl-carousel">
+        <div
+          class="site-blocks-cover inner-page overlay"
+          style="background-image: url(images/hero_2.jpeg);"
+          data-aos="fade"
+          data-stellar-background-ratio="0.5"
+        >
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-6 text-center" data-aos="fade">
+                <h1 class="font-secondary font-weight-bold">
+                  DDD Beauty
+                </h1>
+              </div>
+            </div>
           </div>
-          <div class="product-products">
-            <div class="product-item">
-              <img src="./img/zo_10.png" alt="item-10" />
-              <p class="product-description">Daily Skincare Program</p>
+        </div>
+
+        <div
+          class="site-blocks-cover inner-page overlay"
+          style="background-image: url(images/hero_1.jpeg);"
+          data-aos="fade"
+          data-stellar-background-ratio="0.5"
+        >
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-7 text-center" data-aos="fade">
+                <h1 class="font-secondary font-weight-bold">
+                  Create skin that is healthy, youthful and vibrant.
+                </h1>
+              </div>
             </div>
-            <div class="product-item">
-              <img src="./img/zo_11.png" alt="item-11" />
-              <p class="product-description">Anti-Aging Program</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slant-1"></div>
+
+      <div class="site-section first-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12 text-center" data-aos="fade">
+              <h2 class="site-section-heading text-center font-secondary">We love what we do</h2>
             </div>
-            <div class="product-item">
-              <img src="./img/zo_12.png" alt="item-13" />
-              <p class="product-description">Aggressive Anti-Aging Program</p>
+          </div>
+          <div class="row border-responsive">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right" data-aos="fade-up" data-aos-delay="">
+              <div class="text-center">
+                <h3 class="h4 mb-3">Facial Treatments</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right" data-aos="fade-up" data-aos-delay="100">
+              <div class="text-center">
+                <h3 class="h4 mb-3">Threading</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right" data-aos="fade-up" data-aos-delay="200">
+              <div class="text-center">
+                <h3 class="h4 mb-3">Make up</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="text-center">
+                <h3 class="h4 mb-3">Tinting & more</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="treatments" class="site-half">
+        <div class="img-bg-1" style="background-image: url('images/img_4.jpg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 ml-lg-auto py-5">
+              <h2 class="site-section-heading font-secondary mb-5">Treatments</h2>
+              <p>
+                We provide high quality care catered to our clients' needs.
+              </p>
+
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Dermapen</strong>
+                <br />
+                A treatment that helps to improve old scars and imperfections of the skin, restoring collagen and
+                elastin through a natural healing process. Ultrafine needles, with which multiple cutaneous punctures
+                are made that induce a healing response of the skin producing new collagen and elastin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-half block">
+        <div class="img-bg-1 right" style="background-image: url('images/img_5.jpg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 mr-lg-auto py-5">
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Preslifting</strong>
+                <br />
+                A treatment that generates the growth of new fibroblasts by reproduction from autologue small cells &
+                fibroblasts, using a special rejuvenation solution and an innovative drug delivery system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-half">
+        <div class="img-bg-1" style="background-image: url('images/img_6.jpeg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 ml-lg-auto py-5">
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Aromatherapy</strong>
+                <br />
+                Aromatherapy is a pseudoscience based on the usage of aromatic materials, including essential oils, and
+                other aroma compounds, with claims for improving psychological or physical well-being
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-half block">
+        <div class="img-bg-1 right" style="background-image: url('images/img_3.jpeg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 mr-lg-auto py-5">
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Anti Ageing</strong>
+                <br />
+                Prevent & Correct. Reduce the appearance of the fine lines and wrinkles. Promote a more even skin tone.
+                Proactive skin support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-half">
+        <div class="img-bg-1" style="background-image: url('images/img_2.jpg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 ml-lg-auto py-5">
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Brightening</strong>
+                <br />
+                Skin brightening treatment targets pigment related issues to help address dark patches and youneven skin
+                tone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-half block">
+        <div class="img-bg-1 right" style="background-image: url('images/img_1.jpg');" data-aos="fade"></div>
+        <div class="container">
+          <div class="row no-gutters align-items-stretch">
+            <div class="col-lg-5 mr-lg-auto py-5">
+              <p>
+                <strong style="color: #bc429d; font-size: 1.2rem;">Acne Prevention</strong>
+                <br />
+                Acne and oil control helps to clear skin and prevent breakouts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="products" class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="site-section-heading text-center font-secondary">Products</h2>
+              <p>
+                The products we use for professional and home use are developed by Dr. Zein Obagi, MD - ZO ® Skin
+                Health. We also use the preslifting fibroblast reproduction treatment solution developed by Swiss Group
+                AG.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 block-13 nav-direction-white">
+              <div class="nonloop-block-13 owl-carousel">
+                <div class="media-image">
+                  <img src="images/zo_1.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Daily Defense</h2>
+                    <p>
+                      Powerful antioxidant serum designed to improve the appearance of lines + wrinkles and promote
+                      overall skin health.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+                <div class="media-image">
+                  <img src="images/zo_2.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Firming Serum</h2>
+                    <p>
+                      For all skin types and sensitive skin areas. Reinforces skin health and hydrate to support the
+                      visible improvement in skin elasticity and firmness.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+                <div class="media-image">
+                  <img src="images/zo_4.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Wrinkle Texture</h2>
+                    <p>
+                      A high-potency retinol that reactivates the process of skin renewal to restore natural hydration
+                      and improves the appearance of wrinkles.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+                <div class="media-image">
+                  <img src="images/zo_5.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Radical Night</h2>
+                    <p>
+                      Formulated with 1% retinol to improve skin texture and uneven pigmentation, and to minimize the
+                      appearance of fine lines and wrinkles.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+                <div class="media-image">
+                  <img src="images/zo_6.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Vitamin C</h2>
+                    <p>
+                      Provides a potent dose of vitamin C that brightens and redefines skin, promoting a more even skin
+                      tone and minimizing the appearance of fine lines and wrinkles.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+                <div class="media-image">
+                  <img src="images/zo_7.png" alt="Image" class="img-fluid" />
+                  <div class="media-image-body">
+                    <h2 class="font-secondary text-uppercase">Exfoliate Accelerator</h2>
+                    <p>
+                      Glycolic and lactic acid complex that aids in the removal of dead skin cells while providing
+                      calming and soothing benefits with an aloe, green tea and chamomile blend.
+                    </p>
+                    <p><a href="#" class="btn btn-primary text-white px-4">Contact Us</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section section-counter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="mb-5"><img src="images/img_1.jpg" alt="Image" class="img-fluid" /></p>
+            </div>
+            <div class="col-lg-5 ml-auto">
+              <h2 class="site-section-heading mb-3 font-secondary">Like what you see?</h2>
+              <p class="mb-5">
+                We have several other products for acne treatments such as hydrating and whitening creams. Message us on
+                <a href="https://www.instagram.com/dd_beauty_88/" target="_blank">instagram</a>
+                or via
+                <a href="mailto:danielladdd7@gmail.com" target="_blank">email</a>
+                to find out more.
+              </p>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="counter text-center">
+                    <span class="caption">Products</span>
+                    <span class="number" data-number="120">0</span>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="counter text-center">
+                    <span class="caption">Treatments</span>
+                    <span class="number" data-number="30">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section block-14 nav-direction-white">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h2 class="site-section-heading text-center text-uppercase">Testimonials</h2>
             </div>
           </div>
 
-          <div class="product-contact">
-            <h3>Wait for it... there's more!</h3>
-            <p>
-              We have several other products for acne treatments such as hydrating and whitening creams. Message me on
-              <a class="product-link" href="https://instagram.com/dd_beauty_88">instagram</a>
-              or via
-              <!-- <a href="tel:+35799659397">+357 99659397</a> -->
-              <a class="product-link" href="mailto:danielladdd7@gmail.com">email</a>
-              to find out more.
-            </p>
-          </div>
-        </div>
-      </section>
-      <div class="treatments">
-        <div class="treatments-text">
-          <div class="treatment-life">
-            <h3>Treatments</h3>
-            <p>
-              We provide high quality care catered to our clients' needs. Hover over the images for more information.
-            </p>
+          <div class="nonloop-block-14 owl-carousel">
+            <div class="d-block block-testimony mx-auto text-center">
+              <div class="person w-50 mx-auto mb-4">
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle w-25 mx-auto" />
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Katerina Xylouris</h2>
+                <blockquote>
+                  &ldquo;I was so happy after the Dermapen treatment, thank you Daniella!&rdquo;
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="d-block block-testimony mx-auto text-center">
+              <div class="person w-50 mx-auto mb-4">
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-25 mx-auto" />
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Andreas Georgiades</h2>
+                <blockquote>
+                  &ldquo;Aromatherapy treatment helped me relieve stress. I'd recommend DDD to anyone. &rdquo;
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="d-block block-testimony mx-auto text-center">
+              <div class="person w-50 mx-auto mb-4">
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-25 mx-auto" />
+              </div>
+              <div>
+                <h2 class="h5 mb-4">John Katsiyiannis</h2>
+                <blockquote>
+                  &ldquo;No more acne. I still can't believe it. Great service Daniella. &rdquo;
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="d-block block-testimony mx-auto text-center">
+              <div class="person w-50 mx-auto mb-4">
+                <img src="images/person_7.jpg" alt="Image" class="img-fluid rounded-circle w-25 mx-auto" />
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Olga Marinova</h2>
+                <blockquote>
+                  &ldquo; I feel younger than ever thanks to Daniella's anti ageing treatment! How amazing.&rdquo;
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="treatmentsSection" class="gallery">
-        <div
-          class="gallery-category"
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-2.png');"
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Dermapen</span>
-            <br />
-            A treatment that helps to improve old scars and imperfections of the skin, restoring collagen and elastin
-            through a natural healing process. Ultrafine needles, with which multiple cutaneous punctures are made that
-            induce a healing response of the skin producing new collagen and elastin.
-          </a>
-        </div>
-        <div
-          class="gallery-category"
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-1.jpg');"
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Preslifting</span>
-            <br />
-            A treatment that generates the growth of new fibroblasts by reproduction from autologue small cells &
-            fibroblasts, using a special rejuvenation solution and an innovative drug delivery system.
-          </a>
-        </div>
-        <div
-          class="gallery-category"
-          style="
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-3.jpeg');
-          "
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Aromatherapy</span>
-            <br />
-            Aromatherapy is a pseudoscience based on the usage of aromatic materials, including essential oils, and
-            other aroma compounds, with claims for improving psychological or physical well-being.
-          </a>
-        </div>
-        <div
-          class="gallery-category"
-          style="
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-4.jpeg');
-          "
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Anti-Aging</span>
-            <br />
-            Prevent & Correct. Reduce the appearance of the fine lines and wrinkles. Promote a more even skin tone.
-            Proactive skin support.
-          </a>
-        </div>
-        <div
-          class="gallery-category"
-          style="
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-5.jpeg');
-          "
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Brightening</span>
-            <br />
-            Skin brightening treatment targets pigment related issues to help address dark patches and youneven skin
-            tone.
-          </a>
-        </div>
-        <div
-          class="gallery-category"
-          style="
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/gallery-6.jpeg');
-          "
-        >
-          <a class="gallery-category-text">
-            <span style="font-size: 3rem;">Acne Prevention</span>
-            <br />
-            Acne and oil control helps to clear skin and prevent breakouts.
-          </a>
+
+      <div id="contactUs" class="py-5 bg-primary">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center mb-3 mb-md-0">
+              <h2 class="text-white mb-4" data-aos="fade-up">Want to book a treatment?</h2>
+              <a
+                href="mailto:danielladdd7@gmail.com"
+                class="btn btn-bg-primary font-secondary"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <section id="contactSection" class="contact">
-        <div class="form-wrapper flex">
-          <h2>
-            Get in
-            <span>touch.</span>
-          </h2>
-          <form action="https://formspree.io/mrglpkoo" method="POST">
-            <label for="name" name="name">Your name:</label>
-            <input type="text" name="name" placeholder="Elena Smith" />
-            <label for="email">Your email:</label>
-            <input type="email" id="email required" name="_replyto" placeholder="elena@example.com" />
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <button type="submit" value="Send">Submit</button>
-          </form>
+
+      <footer class="site-footer bg-dark">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+              <div class="col-md-6">
+                <a href="https://www.facebook.com/ddbeauty88/" target="_blank" class="pb-2 pr-2">
+                  <img class="size" src="./images/facebook.svg" alt="" />
+                </a>
+                <a href="https://www.instagram.com/dd_beauty_88/" target="_blank" class="pb-2 pr-2">
+                  <img class="size" src="./images/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              DDD Beauty &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              | Site by
+              <a href="https://mostmojo.github.io" target="_blank">mojo.digital</a>
+            </div>
+          </div>
         </div>
-        <img src="./img/contact-image.jpeg" alt="elena-joy" />
-      </section>
-    </main>
-    <footer>
-      <h4>
-        Daniella Dimitrova &copy;
-        <script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script>
-      </h4>
-      <ul>
-        <li>
-          <a href="mailto:danielladdd7@gmail.com">
-            <img class="social-img" src="./img/mail_outline.svg" alt="mail-social-media" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/ddbeauty88/">
-            <img class="social-img" src="./img/facebook1.svg" alt="facebook-social-media" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/dd_beauty_88" target="_blank">
-            <img class="social-img" src="./img/instagram 1.svg" alt="instagram" />
-          </a>
-        </li>
-      </ul>
-      <p>
-        Site by
-        <a href="https://mostmojo.github.io" target="_blank">mojo.digital</a>
-      </p>
-    </footer>
-    <script src="./app.js"></script>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
